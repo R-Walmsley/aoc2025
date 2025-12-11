@@ -21,6 +21,8 @@ indices = [x[0] for x in sorted_areas][::-1]
 
 # PART TWO 
 # This is a bit slow! Need a better idea... 
+# Think would be refactoring to not use whole shape boundary coordinate wise
+# but just check segments
 shape_boundary = [vals[0]]
 for nextval in vals[1:] + [vals[0]]: 
     currentval = shape_boundary[len(shape_boundary)-1]
